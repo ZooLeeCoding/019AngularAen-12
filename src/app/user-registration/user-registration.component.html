@@ -1,3 +1,32 @@
 <div class="container">
-  
+  <h1>Registration Form</h1>
+  <form (submit)="onSubmit()">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" id="username" name="username"
+      [(ngModel)]="model.username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" name="password"
+      [(ngModel)]="model.password" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="email"
+      [(ngModel)]="model.email" required>
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="number" class="form-control" id="age" name="age"
+      [(ngModel)]="model.age" required>
+    </div>
+    <div class="form-group">
+      <label for="diploma">Diploma</label>
+      <select class="form-control" id="diploma" [(ngModel)]="model.diploma" name="diploma">
+        <option *ngFor="let diploma of diplomaTypes" [value]="diploma">{{diploma}}</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-success">SEND</button>
+  </form>
 </div>

@@ -11,7 +11,7 @@ export class UserRegistrationComponent implements OnInit {
   diplomaTypes = ['BSc', 'Msc', 'OKJ', 'szakközép', 'érettségi'];
   submitted = false;
 
-  model = new User('user', '', '', 0, '');
+  model = new User('user', '', '', 0, '', false);
 
   onSubmit() {
     this.submitted = true;
