@@ -10,6 +10,7 @@ import { SmallerWorldComponent } from './smaller-world/smaller-world.component';
 import { CompositContentComponent } from './composit-content/composit-content.component';
 
 import { ObservableExampleService } from './observable-example.service';
+import { UserRegistrationComponent } from './user-registration/user-registration.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ObservableExampleService } from './observable-example.service';
     WorldComponent,
     ErrorComponent,
     SmallerWorldComponent,
-    CompositContentComponent
+    CompositContentComponent,
+    UserRegistrationComponent
   ],
   imports: [
     BrowserModule,
